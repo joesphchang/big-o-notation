@@ -93,3 +93,86 @@ function printFirstItemThenFirstHalfThenSayHi100Times(items) {
 }
 
 // O(n);
+
+function compressBoxesTwice(boxes, boxes2) {
+    boxes.forEach(function(boxes) {
+        console.log(boxes);
+    }); 
+
+    boxes2.forEach(function(boxes) {
+        console.log(boxes);
+    });
+}
+
+// O(n + n);
+
+// Log all pairs of Array
+const arrBox = ['a', 'b', 'c', 'd', 'e'];
+
+function loopThruBox(boxes) {
+    for (let i = 0; i < boxes.length; i++) {
+        for(let j = 0; j < boxes.length; j++) {
+            console.log(boxes[i], boxes[j]);
+        }
+    }
+}
+
+loopThruBox(arrBox);
+
+// O(N * N) --> O(N ^ 2) 
+// O(N^2) --> Quadratic 
+
+function printNums(nums) {
+    console.log('these are the numbers:');
+    nums.forEach(function(nums) {
+        console.log(nums);
+    });
+
+    console.log('and these are their sums:');
+    nums.forEach(function(firstNum) {
+        nums.forEach(function(secondNum) {
+            console.log(firstNum + secondNum);
+        });
+    });
+}
+
+// printNums([1, 2, 3, 4, 5, 6]);
+
+function boo(n) {
+    for (let i = 0; i < n.length; i++) {
+        console.log('boo');
+    }
+}
+
+// boo([1, 2, 3, 4, 5]);
+
+function arrayOfHi(n) {
+    let hiArray = [];
+
+    for (let i = 0; i < n; i++) {
+        hiArray[i] = 'hi';
+    }
+    return hiArray;
+}
+
+console.log(arrayOfHi(5)); // O(n)
+
+// Find 1st, Find Nth... 
+
+const array = [
+    {
+    tweet: 'hi',
+    date: 2012
+    }, 
+    {
+    tweet: 'my',
+    date: 2014
+    }, 
+    {
+    tweet: 'teddy',
+    date: 2018
+    }
+];
+// O(N^2)
+array[0]; // O(1)
+console.log(array[array.length -1]); // O(1) 

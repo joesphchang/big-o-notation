@@ -36,3 +36,7 @@
     - Can other people read your code
 2. Scalable
     - Code that can scale
+    - Speed
+    - Memory
+
+
